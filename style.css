@@ -1,0 +1,494 @@
+@font-face {
+    font-family: PP mori;
+    src: url(./ppmori.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: PP mori;
+    color: #fff;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.cursor{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: fixed;
+    background-color: #EDBFFF;
+    background-color: #afcf05;
+    z-index: 8;
+    transition: background-image ease 0.5s;
+    /* transition: background-image ease-in 1s; */
+    background-position: center;
+    background-size:cover ;
+    mix-blend-mode: difference;
+}
+
+/* ----------------------Nav---------------------- */
+#nav{
+    height: 55px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    position: fixed;
+    mix-blend-mode: difference;
+    z-index:102;
+}#nav h2{
+    font-family: pp mori;
+    letter-spacing: 2px;
+}#nav #circle{
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.main{
+    background-color: #0F0D0D;
+    cursor: none;
+}
+
+/* ----------------------Page 1---------------------- */
+.page1{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    padding-top: 12vw;
+}
+
+.page1 h1{
+    font-size: 8vw;
+    font-weight: 300;
+    font-family: PP mori;
+    margin-left: 6vw;
+    transform-origin: left;
+}
+.page1 h2{
+    font-size: 8vw;
+    font-weight: 300;
+    margin-left: 26vw;
+    transform-origin: left;
+}
+.page1 img{
+    width: 60%;
+    margin-top: 10vw;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+
+/* ----------------------Page 2---------------------- */
+.page2{
+    min-height: 80vh;
+    width: 100%;
+    padding: 100px 5vw;
+    border-bottom: 2px solid #6c6c6c;
+    position: relative;
+    z-index: 9;
+}
+
+.page2 h1{
+    font-size:7vw;
+    font-weight: 500;
+    color: #111;
+}
+.page2 h1 span{
+    /* font-size:7vw;
+    font-weight: 500; */
+    color: #111;
+}
+.page2-container{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.page2-left{
+    width: 50%;
+}
+.page2-right{
+    width: 24%;
+}
+.page2-left h2{
+    font-size: 3.75vw;
+    font-weight: 300;
+    color: #111;
+    line-height: 4.25vw;
+}
+.page2-right p{
+    font-size: 28px;
+    color: #111;
+}
+
+.page2-right .socials{
+    margin-top: 50px;
+}
+.socials a {
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 50px; 
+}
+.socials a i{
+    color: #0F0D0D;
+}
+
+
+
+/* ----------------------Page 3---------------------- */
+.page3{
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 100px;
+    position: relative;
+    z-index: 9;
+    text-align: center;
+}
+
+.page3 h1{
+    font-size: 6.8vw;
+    font-weight: 300;
+    color: #111;
+    /* margin-left: 100px; */
+}
+.page3-part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.page3-part1 img{
+    height: 500px;
+    height: 65vh;
+    margin-top: 5vw;
+}
+/* .page3-part1 video{
+    height: 300px;
+    margin-top: 40px;
+} */
+
+
+
+/* ----------------------Page 4---------------------- */
+.page4{
+    min-height: 100vh;
+    width: 100%;
+    z-index: 9;
+    position: relative;
+    padding: 170px 100px;
+}
+.elem{
+    /* background-color: salmon; */
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.elem img{
+
+    width: 35%;
+    position: absolute;
+    opacity: 0;
+    transition: all ease-out 0.5s;
+    transform: translateY(10%) rotate(2deg);
+}
+.elem img:nth-child(1){
+    left: 2%;
+}
+.elem img:nth-child(3){
+    right: 5%;
+}
+.text-div{
+    /* background-color: #EDBFFF; */
+
+    height: 15.9vh;
+    position: relative;
+    z-index: 9;
+    overflow: hidden;
+}
+.elem h1{
+    font-size: 7.5vw;
+    font-weight: 600;
+    transition: all ease-out 0.5s;
+}
+
+.elem:hover h1{
+    transform: translateY(-100%);
+    color: #afcf05;
+}
+.elem:hover img{
+    opacity: 1;
+    transform: translateY(0%) rotate(0deg);
+}
+
+
+.page5{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    padding: 140px 100px;
+}
+.page5 h2{
+    font-size: 4vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.box{
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0 20px;
+    border-top: 2px solid #dadada;
+}
+
+.box:nth-last-child(1){
+    border-bottom: 2px solid #dadada;
+
+}
+
+.page5 .box a{
+    text-decoration: none;
+
+}
+
+
+footer{
+    min-height: 25vh;
+    width: 100%;
+    background-color: #0F0D0D;
+}
+
+
+
+
+@media screen and (max-width: 502px) {
+/* #nav #circle{display: none;} */
+#nav{
+    margin-top: 5vw;
+    height: 75px;
+}
+
+/* Page 1 */
+.page1{
+    min-height: 100vh;
+    min-height: 45vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    padding-top: 25vw;
+}
+.page1 h1{
+    font-size: 9vw;
+    font-weight: 300;
+    font-family: PP mori;
+    margin-left: 6vw;
+    transform-origin: left;
+    margin-bottom: 5px;
+
+    display: none;
+}
+.page1 h2{
+    font-size: 9vw;
+    font-weight: 300;
+    margin-left: 15vw;
+    transform-origin: left;
+    margin-top: 5px;
+
+    display: none;
+}
+.page1 img{
+    width: 90%;
+    margin-top: 8vw;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+
+/* Page 2 */
+.page2{
+    min-height: 100%;
+    min-height: 55vh;
+    width: 100%;
+    padding: 45px 5vw;
+    border-bottom: 2px solid #6c6c6c;
+    position: relative;
+    z-index: 9;
+}
+.page2 h1{
+    font-size:11vw;
+    font-weight: 500;
+    color: #fff;
+}
+.page2 h1 span{
+    color: #afcf05;
+}
+.page2-container{
+    margin-top: 5vh;
+    height: 100%;
+    width: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+.page2-left{
+    /* background-color: green; */
+    width: 100%;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+.page2-right{
+    display: block;
+    width: 100%;
+}
+.page2-left h2{
+    font-size: 6vw;
+    font-weight: 300;
+    color: #fff;
+    line-height: 8vw;
+}
+.page2-right p{
+    font-size: 3vw;
+    letter-spacing: 1px;
+    color: #fff;
+    line-height: 4vw;
+}
+.page2-right .socials{
+    margin-top: 10vw;
+}
+.socials a {
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: 10vw; 
+}
+.socials a i{
+    color: #afcf05;
+}
+
+
+/* Page 3 */
+.page3{
+    min-height: 100vh;
+    min-height: 50vh;
+    /* background-color: #dadada; */
+    width: 100%;
+    padding-top: 20vw;
+    position: relative;
+    z-index: 9;
+    text-align: center;
+}
+.page3 h1{
+    font-size: 18vw;
+    font-weight: 300;
+    color: #fff;
+}
+.page3-part1 img{
+    height: 25vh;
+    margin-top: 7vw;    
+}
+
+
+/* Page 4 */
+.page4{
+    min-height: 50vh;
+    width: 100%;
+    z-index: 9;
+    position: relative;
+    padding: 50px 20px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.elem{
+    /* background-color: salmon; */
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.elem img{
+
+    width: 42%;
+    position: absolute;
+    opacity: 0;
+    transition: all ease-out 0.5s;
+    transform: translateY(10%) rotate(2deg);
+}
+.text-div{
+    height: 6.75vh;
+    position: relative;
+    z-index: 9;
+    overflow: hidden;
+}
+.elem h1{
+    font-size: 13vw;
+    font-weight: 600;
+    transition: all ease-out 0.5s;
+}
+
+
+/* Page 5 */
+
+.page5{
+    min-height: 90vh;
+    /* background-color: #EDBFFF; */
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    padding: 80px 40px;
+}
+.page5 h2{
+    font-size: 8vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0 10px;
+    border-top: 2px solid #dadada;
+}
+.box h3{
+    font-size: 4vw;
+    text-align: start;
+    line-height: 5vw;
+}
+.box h4{
+    text-align: end;
+    width: 40%;
+    font-size: 3vw;
+}
+
+
+
+footer{
+    /* min-height: 10vh;
+    width: 100%;
+    background-color: #0F0D0D; */
+    display: none;
+}
+
+    
+}
