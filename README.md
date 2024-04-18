@@ -1,8 +1,8 @@
 # PORTFOLIO
 ![Portfolio](/Stock/ss.png)
 
-### [🌟 Visually Appealing Digital Experience]
-### [🚀 GSAP Animations and Smooth Scrolling with LocomotiveJs]
+### 🌟 Visually Appealing Digital Experience
+### 🚀 GSAP Animations and Smooth Scrolling with LocomotiveJs
 
 ## Introduction
 
