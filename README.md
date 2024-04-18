@@ -1,8 +1,8 @@
 # PORTFOLIO
-![Krypt](https://drive.google.com/file/d/1pVk19jJIE2MOXWVkQn0CvE3yx7nxVKBM/view?usp=sharing)
+![Portfolio](/Stock/ss.png)
 
-### [🌟 Elevate Your Web Presence with Advanced Animation Techniques ]
-### [🚀 Transform Your Portfolio with Cutting-Edge Visuals in Just One ]Course
+### [🌟 Visually Appealing Digital Experience]
+### [🚀 GSAP Animations and Smooth Scrolling with LocomotiveJs]
 
 ## Introduction
 
