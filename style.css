@@ -97,6 +97,9 @@ html, body {
     position: relative;
     z-index: 9;
 }
+#ttl{
+    display: none;
+}
 
 .page2 h1{
     font-size:7vw;
@@ -330,6 +333,12 @@ footer{
     border-bottom: 2px solid #6c6c6c;
     position: relative;
     z-index: 9;
+}
+#yotitle{
+    display: none;
+}
+#ttl{
+    display: block;
 }
 .page2 h1{
     font-size:11vw;
