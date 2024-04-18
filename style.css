@@ -1,6 +1,7 @@
 @font-face {
     font-family: PP mori;
-    src: url(./ppmori.ttf);
+    src: url(/Stock/ppmori.ttf);
+    /* src: url(./ppmori.ttf); */
 }
 
 * {
